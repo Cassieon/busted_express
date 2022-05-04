@@ -13,6 +13,7 @@ app.set('views', './views');
 app.set('view engine', 'html');
 
 const server = http.createServer(app);
+const router = express.Router();
 
 
 
