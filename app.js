@@ -4,11 +4,10 @@ const http = require('http');
 const hostname = '127.0.0.1';
 const port = 3333;
 
-const express = require('express'),
-    es6Renderer = require('express-es6-template-engine');
-
+const express = require('express');
 const app = express();
 
+const es6Renderer = require('express-es6-template-engine');
 app.engine('html', es6Renderer);
 app.set('views', './views');
 app.set('view engine', 'html');
